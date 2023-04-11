@@ -26,6 +26,13 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Tecnologias utilizadas:
+```bash
+NestJS - Possui uma arquitetura modular, com suporte a Typescript, tornando mais fácil o desenvolvimento.
+Bcrypt - Para o hash das senhas
+Typescript
+Moongose
+```
 ## Installation
 
 ```bash
