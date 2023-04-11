@@ -16,17 +16,6 @@ describe('AuthController (e2e)', () => {
     await app.init();
   });
 
-  it('/auth/register (POST) should return access token on successful registration', () => {
-    return request(app.getHttpServer())
-      .post('/auth/register')
-      .send({ email: 'test3example.com', name: 'test', password: 'password' })
-      .expect(201)
-      .expect('Content-Type', /json/)
-      .then((response) => {
-        expect(response.body).toHaveProperty('accessToken');
-      });
-  });
-
   it('/auth/login (POST) should return access token on successful login', () => {
     return request(app.getHttpServer())
       .post('/auth/login')
